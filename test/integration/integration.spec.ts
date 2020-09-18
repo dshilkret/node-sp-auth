@@ -20,69 +20,11 @@ interface ITestInfo {
 const config: any = require('./config');
 
 const tests: any[] = [
-  {
-    name: 'adfs user credentials',
-    creds: config.adfsCredentials,
-    url: config.onpremAdfsEnabledUrl
-  },
-  {
-    name: 'on-premise user credentials',
-    creds: config.onpremCreds,
-    url: config.onpremNtlmEnabledUrl
-  },
-  {
-    name: 'on-premise user UPN credentials',
-    creds: config.onpremUpnCreds,
-    url: config.onpremNtlmEnabledUrl
-  },
-  {
-    name: 'on-premise user+domain credentials',
-    creds: config.onpremUserWithDomainCreds,
-    url: config.onpremNtlmEnabledUrl
-  },
-  {
-    name: 'online user credentials',
-    creds: config.onlineCreds,
-    url: config.onlineUrl
-  },
+  
   {
     name: 'on-premise addin only',
     creds: config.onpremAddinOnly,
-    url: config.onpremAdfsEnabledUrl
-  },
-  {
-    name: 'online addin only',
-    creds: config.onlineAddinOnly,
-    url: config.onlineUrl
-  },
-  {
-    name: 'ondemand - online',
-    creds: {
-      ondemand: true
-    },
-    url: config.onlineUrl
-  },
-  {
-    name: 'ondemand - on-premise with ADFS',
-    creds: {
-      ondemand: true
-    },
-    url: config.onpremAdfsEnabledUrl
-  },
-  {
-    name: 'file creds - online',
-    creds: null,
-    url: config.onlineUrl
-  },
-  {
-    name: 'file creds - on-premise - NTLM',
-    creds: null,
-    url: config.onpremNtlmEnabledUrl
-  },
-  {
-    name: 'file creds - on-premise - ADFS',
-    creds: null,
-    url: config.onpremAdfsEnabledUrl
+    url: config.onpremAddInUrl
   }
 ];
 
