@@ -20,7 +20,11 @@ interface ITestInfo {
 const config: any = require('./config');
 
 const tests: any[] = [
-  
+  {
+    name: 'onlineAddinOnly addin only',
+    creds: config.onlineAddinOnly,
+    url: config.onlineUrl
+  },
   {
     name: 'on-premise addin only',
     creds: config.onpremAddinOnly,
